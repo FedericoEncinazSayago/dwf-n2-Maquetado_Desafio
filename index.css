@@ -1,0 +1,305 @@
+/* Importando Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto&display=swap');
+
+/* Estilos globales */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans";
+}
+
+/* Estilos compartidos para varias secciones */
+.header,
+.hero-section,
+.about-me,
+.services,
+.contact-me,
+.footer {
+  width: 100%;
+}
+
+.hero-section__welcome-content,
+.about-me__content,
+.services__content,
+.services__cards-content,
+.card,
+.form-content,
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-content,
+.header__burger-dash,
+.hero-section__img-content,
+.about-me__img-content,
+.card__img-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me__title,
+.services__title,
+.contact-me__title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 41px 0;
+  color: white; /* Añadido para mayor consistencia */
+}
+
+.about-me__text,
+.card__text {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+  color: white; /* Añadido para mayor consistencia */
+}
+
+
+.contact-me__label-title,
+.social-media__title {
+  font-family: "Roboto";
+  font-size: 13px;
+  font-weight: 400;
+  display: block;
+  color: white;
+}
+
+/* Estilos de la sección del encabezado */
+.header {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .header {
+    margin-bottom: 50px;
+    padding: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__burger-dash {
+    display: none;
+  }
+}
+
+.header__nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .header__nav {
+    display: flex;
+    gap: 50px;
+  }
+}
+
+.header__link {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+}
+
+/* Estilos de la sección de bienvenida */
+.hero-section__welcome-content {
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .hero-section__welcome-content {
+    flex-direction: row;
+    gap: 100px;
+    height: 65vh;
+  }
+}
+
+.hero-section__title-welcome {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  max-width: 300px;
+}
+
+/* Estilos de la sección Acerca de mí */
+.about-me {
+  background-color: black;
+  padding: 50px 0;
+}
+
+@media (min-width: 768px) {
+  .about-me {
+    height: 95vh;
+  }
+}
+
+.about-me__content {
+  gap: 57px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .about-me__content {
+    flex-direction: row;
+    height: 95%;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-me__text-content {
+    order: 2;
+  }
+}
+
+.title-services {
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .about-me__title {
+    text-align: left;
+    margin: 0 0 28px 0;
+  }
+}
+
+.about-me__text {
+  max-width: 450px;
+}
+
+@media (min-width: 768px) {
+  .about-me__text {
+    text-align: left;
+  }
+}
+
+/* Estilos de la sección de Servicios */
+.services {
+  padding: 69px 0;
+  background-color: #FAFAFA;
+}
+
+.services__title {
+  color: black;
+}
+
+.services__cards-content {
+  width: 80%;
+  margin: 0 auto;
+  gap: 104px;
+}
+
+@media (min-width: 768px) {
+  .services__cards-content {
+    flex-direction: row;
+  }
+}
+
+.card {
+  gap: 14px;
+}
+
+.card__title {
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.card__text {
+  color: black;
+  max-width: 262px;
+}
+
+/* Estilos de la sección de Contacto */
+.contact-me {
+  padding: 69px 0;
+  background-color: black;
+}
+
+@media (min-width: 768px) {
+  .contact-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+.contact-me__form {
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .contact-me__form {
+    margin: 0;
+  }
+}
+
+.label-title {
+  margin-bottom: 10px;
+}
+
+.contact-me__input,
+.contact-me__textarea {
+  font-family: inherit;
+  background-color: white;
+  border: none;
+  border-radius: 0px;
+  width: 100%;
+  padding: 10px;
+}
+
+.contact-me__textarea {
+  min-height: 200px;
+}
+
+.contact-me__form__button {
+  padding: 21px 0;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-weight: 700;
+  background-color: #FFD953;
+  width: 100%;
+}
+
+/* Estilos de la sección del pie de página */
+.footer {
+  padding: 50px 0;
+}
+
+.social-media-content {
+  display: flex;
+  gap: 20px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-media__title {
+  color: black;
+}
