@@ -227,7 +227,7 @@ body {
 
 /* Estilos de la sección de Contacto */
 .contact-me {
-  padding: 69px 0;
+  padding: 69px;
   background-color: black;
 }
 
@@ -241,8 +241,7 @@ body {
 }
 
 .contact-me__form {
-  max-width: 450px;
-  width: 100%;
+  min-height: 450px;
   margin: 0 auto;
   display: grid;
   gap: 20px;
@@ -251,10 +250,11 @@ body {
 @media (min-width: 768px) {
   .contact-me__form {
     margin: 0;
+    width: 40%;
   }
 }
 
-.label-title {
+.contact-me__label-title {
   margin-bottom: 10px;
 }
 
